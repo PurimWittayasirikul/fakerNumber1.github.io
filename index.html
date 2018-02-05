@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <title>Quote Quiz game</title>
+    <style type="text/css">
+    	@font-face{
+    		font-family: EkkamaiStandard-Light;
+    		src : url("EkkamaiStandard-Light.ttf");
+    	}
+    	body {
+    		background-color: #4c516d;
+    		font-family: EkkamaiStandard-Light;
+    	}
+    	.page1 {
+    		font-size: 60px;
+    		padding: 30px;
+    	}
+    	.page1 button {
+
+    		font-size: 25px;
+    		padding: 20px;
+
+    	}
+    	.selectploblem{
+    		margin: 80px
+    	}
+
+    	.quote{
+    		margin: 30px;
+    		background-color: #838996;
+    		padding: 20px;
+    		font-size: 30px;
+    	}
+
+    	.pic{
+    		width: 400px;
+    		height: 250px;
+
+    	}
+    	.choice{
+    		width: 20%;
+    		padding: 0  50px; 
+    		font-size: 15px;
+    		padding: 20px;
+    	}
+    	.time {
+    		font-size: 50px;
+    		color :#4c516d;
+    		background-color: white;
+    		padding: 10px;
+    		display: inline-block;
+
+    	}
+    	#tryagain{
+    		font-size: 20px;
+    		color :#4c516d;
+    		background-color: white;
+    		padding: 10px;
+    		display: inline-block;
+    	}
+
+    	.scoreBoard{
+    		text-align: center;
+    		padding: 50px;
+    		font-size: 30px;
+    	}
+
+    </style>
+    
+</head>
+<body>
+	<script src="jquery-3.3.1.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src ="Style.css"></script>
+		<div class="page1" >
+			<center>Quote Quiz game</center>
+			<center>Let's play</center>
+			<center>
+				<button class="selectploblem" id="10Quote" onclick="chousePloblem(10)">10 Quote</button>
+				<button class="selectploblem" id="20Quote" onclick="chousePloblem(20)">20 Quote</button>
+			</center>
+			
+		</div>
+		<div class="page2">
+			<div class="time"></div>
+			<center><div class="pic"></div></center>
+			<br>
+			<center><div class="quote" id="quote"> </div></center>
+			<center>
+				<button class="choice" id="1"></button>
+				<button class="choice" id="2"></button>
+				<button class="choice" id="3"></button>
+				<button class="choice" id="4"></button>
+			</center>
+		</div>
+
+		<div class="lastPage">
+			<div class="scoreBoard" ></div>
+			<center><button  id="tryagain"><a href="">try again</a></button></center>
+		</div>
+
+
+		
+		<script>
+			Start();
+			var numQ = [];
+			var inNumQ = 0;
+			var num = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19];
+			var CountPloblem ;
+			var t = 15;
+			var ans = "";
+			var score = 0;
+			
+			function randomNumQ () {
+				for (var i = CountPloblem; i >= 0; i--) {
+					let n = Math.floor(Math.random() * num.length);
+					numQ.push(num[n]);
+					num.splice(n, 1);
+					numQ[inNumQ]
+				}
+				
+			}
+
+			function chousePloblem(a) {
+				$(".page2").show();
+				$(".page1").hide();
+				CountPloblem = a;
+				randomNumQ ();
+				t=1;
+				countdown();
+			}
+
+			function Start(){
+				$(".page2").hide();
+				$(".lastPage").hide();
+			}
+
+		 	function countdown() {
+		 		t--;
+		 		if(t==0 && CountPloblem>0){
+		 			queryQuote(numQ[inNumQ]);
+		 			inNumQ++;
+		 			t=10;
+		 		}
+		 		if (t==0 && CountPloblem==0){
+		 			num = [];
+		 			$(".scoreBoard").html(score);
+		 			$(".lastPage").show();
+		 			$(".page2").hide();
+		 		}
+		 		$(".time").html(t);
+		 		setTimeout("countdown()",1000);
+		 	}
+			
+			function queryQuote(i) {
+			$(document).ready(function(){
+					$.ajax({
+						url: 'datacollect.json',
+						method: 'GET',
+						dataType : 'json',
+						success: function(response){
+						
+							$(".pic").css('content','url('+response[i].image+')');
+							$(".quote").html("\""+response[i].question+"\"");
+							$("#1").html(response[i].a);
+							$("#2").html(response[i].b);
+							$("#3").html(response[i].c);
+							$("#4").html(response[i].d);
+							ans = response[i].ans;
+							CountPloblem--;
+
+						}
+					});
+				});
+			}
+			$(".choice").click(function() {
+		 		if($(this).html() ==  ans){
+					score++;
+					console.log(score);
+				}
+				if (CountPloblem>0){
+					queryQuote(numQ[inNumQ]);
+		 			inNumQ++;
+		 			t=10;
+				}
+				if (CountPloblem==0){
+					num = [];
+		 			$(".scoreBoard").html("Your score is : "+score);
+		 			$(".lastPage").show();
+		 			$(".page2").hide();
+				}
+			})
+
+		</script>
+
+</body>
+</html>

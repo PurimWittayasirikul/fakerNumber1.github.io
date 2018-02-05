@@ -1,0 +1,183 @@
+[
+	{
+		"question" : "ชีวิตก็เหมือนกล่องที่เต็มไปด้วยช็อกโกแลต คุณไม่มีทางรู้เลยว่าคุณจะได้รสอะไร",
+		"image" : "pic/forrest-gump.jpg",
+		"a" : "Forrest Gump",
+		"b" : "Bat Man",
+		"c" : "Rudderless",
+		"d" : "Man of Steel",
+		"ans" : "Forrest Gump"
+
+	},{
+		"question" : "จักรวาลกว้างใหญ่กว่าทุกสิ่ง ถ้าหากมีเพียงแค่เรา ความกว้างใหญ่คงสูญเปล่าสิ้นดี",
+		"image" : "pic/Contact.jpg",
+		"a" : "Star war",
+		"b" : "Contact",
+		"c" : "The Fifth Element ",
+		"d" : "E.T",
+		"ans" : "Contact"
+
+	},{
+		"question" : "เราใช้ความกล้าหาญอย่างมากในการต่อสู้กับศัตรูของเราแต่ต้องใช้ความกล้าหาญมากกว่านั้นอีกเมื่อเราต้องต่อสู้กับเพื่อนของเราเอง",
+		"image" : "pic/harry.jpg",
+		"a" : "Space Between Us",
+		"b" : "Harry Potty",
+		"c" : "Wolf of wallstreet",
+		"d" : "Sucker punch",
+		"ans" : "Harry Potty"
+
+	},{
+		"question" : "ถ้าถือดาบก็กอดเธอไม่ได้ แต่ถ้าวางดาบก็ไม่อาจปกป้องเธอได้",
+		"image" : "pic/bleach.jpg",
+		"a" : "Bleach",
+		"b" : "One Piece",
+		"c" : "Yuru Yuri",
+		"d" : "Noragami",
+		"ans" : "Bleach"
+
+	},{
+		"question" : "เรื่องบางเรื่องเราไม่มีวันลบมันออกไปจากความทรงจำได้ เราทำได้แค่เพียงอย่าไปสะกิดมันกลับขึ้นมา",
+		"image" : "pic/eternal-sunshine-of-the-spotless-mind.jpg",
+		"a" : "Eternal Sunshine of the Spotless Mind",
+		"b" : "Blue Valentine",
+		"c" : "Love rosie",
+		"d" : "Indiana Jonse",
+		"ans" : "Eternal Sunshine of the Spotless Mind"
+
+	},{
+		"question" : "ไม่ว่าจะสูญเสียความทรงจำสักกี่ครั้ง ฉันก็จะตกหลุมรักเธอทุกครั้งไป",
+		"image" : "pic/codegeass.jpg",
+		"a" : "Code Geass",
+		"b" : "The end of the f***ing world",
+		"c" : "Lacasa de papel",
+		"d" : "God father",
+		"ans" : "Code Geass"
+
+	},{
+		"question" : "ถึงผมจะไม่ฉลาดแต่ผมก็รู็ว่าความรักคืออะไร",
+		"image" : "pic/forrest-gump-jenny.jpg",
+		"a" : "Forrest Gump",
+		"b" : "Alien",
+		"c" : "Iron man",
+		"d" : "Doraemon",
+		"ans" : "Forrest Gump"
+
+	},{
+		"question" : "ไม่มีฝันใดสูงเกินใฝ่ และไม่มีใครตำต้อยเกินจะฝัน",
+		"image" : "pic/turbo.jpg",
+		"a" : "Speed Racer",
+		"b" : "Turbo",
+		"c" : "Fast and furious",
+		"d" : "Dirty grandpa",
+		"ans" : "Turbo"
+
+	},{
+		"question" : "แม้ว่าจะย้อนเวลาอีกสักกี่ครั้งถ้าเราไม่ใช่คนที่ใช่ก็ไม่สามารถทำให้คนๆนั้นรักเราได้",
+		"image" : "pic/sunshine.jpg",
+		"a" : "Limitless",
+		"b" : "Pawn Sacrified",
+		"c" : "Spiderman",
+		"d" : "About Time",
+		"ans" : "About Time"
+
+	},{
+		"question" : "นกบางตัว ไม่ได้เกิดมาเพื่ออยู่ในกรง ขนของพวกมันสดใสเกินไป",
+		"image" : "pic/shawshank.jpg",
+		"a" : "The Shawshank Redemption",
+		"b" : "Hugo",
+		"c" : "Zootopia",
+		"d" : "The Amazing Spiderman",
+		"ans" : "The Shawshank Redemption"
+
+	},{
+		"question" : "คุณจะยอมตามอย่างฮีโร่ หร์อจะอยู่จนกลายเป็นวายร้าย",
+		"image" : "pic/badd.jpg",
+		"a" : "BatMan The Dark Knight",
+		"b" : "BatMan Begin",
+		"c" : "Thor",
+		"d" : "SuperMan",
+		"ans" : "BatMan The Dark Knight"
+
+	},{
+		"question" : "ความตายยิ้มให้กับเราทุกคนสิ่งที่เราทำได้คือยิ้นตอบ",
+		"image" : "pic/Gladiator-.jpg",
+		"a" : "Spirit Away",
+		"b" : "Battle L.A.",
+		"c" : "Gladiator ",
+		"d" : "My sweet Heart",
+		"ans" : "Gladiator"
+
+	},{
+		"question" : "ความหวังเป็นสิ่งที่ดี บางครั้งมันอาจเป็นสิ่งที่ดีที่สุดด้วยซ้ำ",
+		"image" : "pic/shawshank2.jpg",
+		"a" : "Saw",
+		"b" : "Cach me If you can",
+		"c" : "The Shawshank Redemption",
+		"d" : "Spiderman HomeComming",
+		"ans" : "The Shawshank Redemption"
+
+	},{
+		"question" : "การลืมคนที่เรารักหัวใจไม่สลายเท่าการจำคนที่ไม่มีวันรักเรา",
+		"image" : "pic/blue-valentine-2.jpg",
+		"a" : "Blue Valentine",
+		"b" : "La La Land",
+		"c" : "Moana",
+		"d" : "Star War",
+		"ans" : "Blue Valentine"
+
+	},{
+		"question" : "แฟนไม่ได้มีใว้อยู่ด้วยกันตลอดเวลาแต่มีไว้ให้รู้ว่ายังมีใครสักคนที่รักเรา ",
+		"image" : "pic/รถไฟฟ้า.jpg",
+		"a" : "Tangled",
+		"b" : "รักแห่งสยาม",
+		"c" : "Sucseed",
+		"d" : "รถไฟฟ้ามาหานะเธอ",
+		"ans" : "รถไฟฟ้ามาหานะเธอ"
+
+	},{
+		"question" : "ของของนายก็คือของของฉัน ของของฉันก็คือของของฉัน",
+		"image" : "pic/doraemon.png",
+		"a" : "Naruto",
+		"b" : "Doraemon",
+		"c" : "Boruto",
+		"d" : "One Punch Man",
+		"ans" : "Doraemon"
+
+	},{
+		"question" : "การยกโทษให้กับคำโกหกผู้หญิงนั้นคือลูกผู้ชาย",
+		"image" : "pic/onepiece1.jpg",
+		"a" : "One Piece",
+		"b" : "One Punch Man",
+		"c" : "One Two Three Four Five",
+		"d" : "One nee ja tai leaw",
+		"ans" : "One Piece"
+
+	},{
+		"question" : "ฉันจะเป็นราชาโจรสลัดให้ได้เลย",
+		"image" : "pic/onepiece.jpg",
+		"a" : "One Piece",
+		"b" : "K-On",
+		"c" : "Bleach",
+		"d" : "Vagabond",
+		"ans" : "One Piece"
+
+	},{
+		"question" : "ใครมันจะอยากติดอยู่ในฝันเป็นสิบๆปีละ  มันก็ขึ้นอยู่กับว่าฝันอะไร",
+		"image" : "pic/inception.jpg",
+		"a" : "Inception",
+		"b" : "In Time",
+		"c" : "Indiana",
+		"d" : "In to the Battle field",
+		"ans" : "Inception"
+
+	},{
+		"question" : "หากคุณเก่งอะไร จงอย่าทำมันให้ใครฟรี ๆ",
+		"image" : "pic/batman.jpg",
+		"a" : "Bat Man the Dark Knight",
+		"b" : "Bad ass",
+		"c" : "Predistination",
+		"d" : "Guardiens Of The Galaxy Vol.2",
+		"ans" : "Bat Man the Dark Knight"
+
+	}
+]
